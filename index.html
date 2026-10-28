@@ -8,11 +8,22 @@
 <meta name="theme-color" content="#1b1814">
 <meta property="og:title" content="Nima Ansari — Chief AI Officer">
 <meta property="og:description" content="AI agents and production pipelines that run every day. Vancouver, BC.">
-<meta property="og:url" content="https://nimaansari.github.io/">
+<meta property="og:url" content="https://nimaansari.dev/">
 <meta property="og:type" content="profile">
-<link rel="canonical" href="https://nimaansari.github.io/">
+<link rel="canonical" href="https://nimaansari.dev/">
+<link rel="alternate" hreflang="en" href="https://nimaansari.dev/?lang=en">
+<link rel="alternate" hreflang="fa" href="https://nimaansari.dev/?lang=fa">
+<link rel="alternate" hreflang="x-default" href="https://nimaansari.dev/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script>
+  (function(){
+    // language before first paint, so a Persian visitor never sees a flash of English or a left-to-right layout
+    try{
+      var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang');
+      if (l !== 'fa' && l !== 'en') l = (navigator.languages || [navigator.language]).some(function(x){return /^fa/i.test(x||'')}) ? 'fa' : 'en';
+      document.documentElement.lang = l; document.documentElement.dir = l === 'fa' ? 'rtl' : 'ltr';
+    }catch(e){}
+  })();
   (function(){
     try{
       var t = localStorage.getItem('theme');
@@ -34,15 +45,15 @@
     { "@type": "CollegeOrUniversity", "name": "University of Tehran" }
   ],
   "knowsAbout": ["AI agents", "Production AI pipelines", "LLM cost control", "Local inference", "Automation"],
-  "url": "https://nimaansari.github.io/",
+  "url": "https://nimaansari.dev/",
   "sameAs": ["https://github.com/nimaansari", "https://www.linkedin.com/in/nima-ansari-360a26223"]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-CcH7LEZX.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CY-xKJ79.css">
+  <script type="module" crossorigin src="/assets/index-B5MhlKVA.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DXIDoDKW.css">
 </head>
 <body>
 <div id="root"></div>
